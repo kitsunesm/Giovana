@@ -33,7 +33,7 @@
 </head>
 <body>
   <h1>Login</h1>
-  <p>Seja bem-vindo!</p>
+  <p>Seja bem-vinda!</p>
   <p>Preencha os campos abaixo corretamente para ver sua surpresa!</p>
 
   <input type="text" id="nome" placeholder="Nome completo"><br>
@@ -52,16 +52,16 @@
 
       let acertos = 0;
 
-      if (nome === "Arthur Rodrigues Oss Miranda") acertos++;
-      if (data === "18/07/2006") acertos++;
-      if (senha === "0705") acertos++;
+      if (nome === "Giovana Heloise Canhete") acertos++;
+      if (data === "13/09/2011") acertos++;
+      if (senha === "Cachete") acertos++;
 
       if (acertos === 3) {
         window.location.href = "mensagem.html";
       } else {
         let mensagem = "";
         if (acertos === 2) mensagem = "Acho que errou alguma coisa, tente novamente.";
-        else if (acertos === 1) mensagem = "Suspeito...acho que é um impostor!";
+        else if (acertos === 1) mensagem = "Suspeito...acho que é uma impostora!";
         else mensagem = "Isso não é pra você, vaza!";
         document.getElementById("resultado").innerHTML = `Você acertou ${acertos} de 3.<br>${mensagem}`;
       }
